@@ -18,7 +18,10 @@
   <section ng-controller="ClockController as clock" ui-view>
 
     <h1>Clock App</h1>
-    
+
+    <p>{{ clock.clock | date: 'fullDate' }}</p>
+    <p>{{ clock.clock | date: 'HH:mm:ss' }}</p>
+
   </section>
 
 </body>
