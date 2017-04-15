@@ -1,0 +1,13 @@
+.clock-background {
+  background: black;
+  color: #67C8FF;
+  height: 500px;
+  width: 1500px;
+  font-size: 150px;
+  text-align: center;
+  border-radius: 400px;
+}
+.day {
+  font-size: 75px;
+  color: blue;
+}

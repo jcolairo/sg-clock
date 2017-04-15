@@ -3,13 +3,13 @@ function ClockController($timeout) {
 
   controller.tickInterval = 1000;
 
-  var tick = function() {
+  var clockInfo = function() {
     controller.clock = Date.now();
-    $timeout(tick, controller.tickInterval);
+    $timeout(clockInfo, controller.tickInterval);
   };
 
   function init() {
-    $timeout(tick, controller.tickInterval);
+    $timeout(clockInfo, controller.tickInterval);
   }
   init();
 }

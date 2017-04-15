@@ -8,6 +8,9 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 
+  <link href="css/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
   <script src="./app.js" charset="utf-8"></script>
   <script src="controller/clock.controller.js" charset="utf-8"></script>
 
@@ -17,10 +20,10 @@
 
   <section ng-controller="ClockController as clock" ui-view>
 
-    <h1>Clock App</h1>
-
-    <p>{{ clock.clock | date: 'fullDate' }}</p>
-    <p>{{ clock.clock | date: 'HH:mm:ss' }}</p>
+    <div class="clock-background">
+      <p>{{ clock.clock | date: 'EEE, d MMM, yyyy' }}</p>
+      <p>{{ clock.clock | date: 'h:mm:ss a' }}</p>
+    </div>
 
   </section>
 
