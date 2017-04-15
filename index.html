@@ -4,14 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+  <script src="./app.js" charset="utf-8"></script>
+  <script src="controller/clock.controller.js" charset="utf-8"></script>
+
   <title>Document</title>
 </head>
 <body>
 
-  <h1>Clock App</h1>
-
   <section ng-controller="ClockController as clock" ui-view>
 
+    <h1>Clock App</h1>
+    
   </section>
 
 </body>
