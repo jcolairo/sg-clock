@@ -22,7 +22,13 @@
 
     <div class="clock-background">
       <p>{{ clock.clock | date: 'EEE, d MMM, yyyy' }}</p>
-      <p>{{ clock.clock | date: 'h:mm:ss a' }}</p>
+      <a href="" ng-click="shortHand=false ; longHand=true">12H</a>
+      <button ng-click="shortHand=true ; longHand=false">24H</button>
+
+      <p ng-click="shortHand=true ; longHand=false" ng-hide="shortHand">{{ clock.clock | date: 'h:mm:ss a' }}</p>
+      <p ng-click="shortHand=false ; longHand=true" ng-hide="longHand">{{ clock.clock | date: 'H:mm:ss' }}</p>
+      <!-- <button type="button" name="button" ng-click="showme=false">12h</button>
+      <button type="button" name="button" ng-click="">24h</button> -->
     </div>
 
   </section>
